@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 218, 244);
+    overflow: hidden;
+}
+
+
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    background: linear-gradient(45deg, #ff4ea644, #face97);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6);
+}
+
+.imageButton {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.imageButton img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.buttonText {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 14px; 
+    color: rgba(41, 40, 40, 0.685); 
+    margin-top: 5px; 
+}
+
+#messageButton { top: 40%; left: 50%; transform: translate(-50%, -50%); }
+#nowarButton { top: 10%; left: 10%; }
+#zainaButton { top: 10%; right: 10%; }
+#basButton { bottom: 10%; left: 10%; }
+#shaButton { bottom: 10%; right: 10%; }
+
+
+#messagePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+#popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+canvas {
+    display: block;
+}
+
+
+#slideshowButton {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #fccbe3fd, #face97);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: rgba(41, 40, 40, 0.685);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#slideshowContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#slideshowOverlay {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+#slideshowTitle {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(138, 138, 138);
+}
+
+#slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    max-height: 60vh;
+}
+
+#slides img {
+    max-width: 80%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#closeSlideshowButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffbec9;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+#muteButton {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #fccbe3fd, #face97);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
